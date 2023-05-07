@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilosVinos.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Parcial segundo corte</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div class="BarraInicio">
+            <nav class="nav">
+                <a href="../index.html" class ="logo nav-link">Licorera de juguitos</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link"href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" href="../catalogo.html">Cátalogo</a>
+                    </li>
+                    <li class="nav-menu-item dropdown">
+                      <a class="nav-menu-link nav-link" href="#">Consulta</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="preguntasF.html">Preguntas frecuentes</a></li>
+                        <li><a href="../contactanos.html">Contáctanos</a></li>
+                        <li><a href="politicas.html">Políticas de privacidad</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-login-item nav-menu-item">
+                        <a class="nav-link nav-menu-login" href="../login.html">Iniciar sesión</a>
+                    </li>
+            </nav>
+        </div>
+
+        <div class="product-container">
+          <img src="../img/Vinito1.jpg" alt="Vinito">
+          <div class="product-info">
+            <h2>6 Lambrusco Cleto Chiarli IGT Rosado, Tinto, Blanco</h2>
+            <p class="product-description">Burbujeante y de color dorado brillante. En nariz: suaves aromas cítricos con toques dulces. En boca: fácil de tomar, refrescante y efervecente.</p>
+            <p>$252,000 COP</p>
+            <form>
+              <label for="cantidad">Cantidad:</label>
+              <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+              <button type="submit" id="comprar-btn">Añadir al carrito</button>
+            </form>
+          </div>
+        </div>
+        
+
+        <div class="comment-section">
+          <h2>Comentarios</h2>
+          <div class="comments-container">
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">Juan Pérez</span>
+                <span class="comment-date">12 de mayo de 2023</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">Me encantó este vino, definitivamente lo recomiendo.</p>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">María Gómez</span>
+                <span class="comment-date">10 de mayo de 2023</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">Excelente calidad de vino, sin duda volveré a comprarlo.</p>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">Pedro Martínez</span>
+                <span class="comment-date">8 de mayo de 2023</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">Un vino muy suave y delicioso, ideal para compartir con amigos.</p>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">Laura Sánchez</span>
+                <span class="comment-date">5 de mayo de 2023</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">No soy muy fanática del vino, pero este me gustó bastante.</p>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="comment-header">
+                <span class="comment-author">Carlos Ramírez</span>
+                <span class="comment-date">3 de mayo de 2023</span>
+              </div>
+              <div class="comment-body">
+                <p class="comment-text">El sabor de este vino es increíble, me sorprendió gratamente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Contacto</h3>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> 1234 Calle Principal, Ciudad</li>
+          <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+          <li><i class="fas fa-envelope"></i> info@mi-licoreria.com</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Horario</h3>
+        <ul class="list-unstyled">
+          <li>Lunes - Viernes: 9am - 9pm</li>
+          <li>Sábados: 10am - 8pm</li>
+          <li>Domingos: Cerrado</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Síguenos</h3>
+        <ul class="list-unstyled social-media">
+          <li><a class="fa" href="#"> Facebook</a></li>
+          <li><a  class="in" href="#"> Instagram</a></li>
+          <li><a class="twi" href="#"> Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+</html>

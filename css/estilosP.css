@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.menuCategoria{
+    margin-top: 70px;
+}
+#contenedor{
+    background-color: rgb(14, 10, 5);
+    height: 1700px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.recomendados{
+    
+  padding: 120px;
+  background-color: rgb(24, 14, 5);
+}
+
+.containerProductos{
+    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+/*La barrita nav*/
+.BarraInicio {
+  position: fixed;
+  background-color: rgb(29, 12, 9);
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  -webkit-text-stroke: 0px black;
+  color: rgb(238, 236, 236);
+  text-decoration: none;
+}
+
+.logo {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0 150px;
+  line-height: 70px;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 100px;
+  list-style: none;
+  
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-family: monospace;
+}
+
+.nav-menu-link:hover {
+  background-color: rgb(82, 41, 7);
+}
+
+.nav-menu-login {
+  font-family: monospace;
+  padding: 10px 14px;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: rgb(82, 41, 7);;
+}
+
+.nav-menu-login:hover {
+  background-color: rgb(133, 85, 47);
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  color: white;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(29, 12, 9);
+  z-index: 1;
+  list-style: none;
+  
+}
+
+.dropdown-menu li {
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  border-radius: 1px;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgb(82, 41, 7);
+}
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+}
+ 
+
+  /*Preguntas*/
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .faq {
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .faq h2 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .faq p {
+  
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+
+ 
+/*Politicas*/
+
+.policy {
+  font-family: monospace;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.policy h2 {
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.policy p {
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.policy ul {
+  font-family: monospace;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.policy li {
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+/*Footer*/
+  footer {
+    
+    background-color: #251403;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  footer ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  footer ul li i {
+    margin-right: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin-right: 20px;
+  }
+  
+  .social-media li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-media li a i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Facebook */
+  .fa{
+    font-weight: bold;
+    color: #3b5998;
+  }
+  
+  /* Instagram */
+  .in{
+    font-weight: bold;
+    color: #e4405f;
+  }
+  
+  /* Twitter */
+  .twi {
+    font-weight: bold;
+    color: #1da1f2;
+  }
+  
+footer li {
+    font-family: monospace;
+}
+
+
