@@ -175,11 +175,15 @@ body{
     font-weight: bold;
   }
 
+  .containerR h2{
+    font-size: 30px;
+    font-family: monospace;
+    color: white;
+  }
 
-#recomendados{
-    
+.recomendados{
     padding: 30px;
-    background-color: rgb(24, 14, 5);
+    background-color: #301E0E;
 }
 
 p{
@@ -246,6 +250,92 @@ p{
       background-color: #865023;
   }
  
+  /*Formulario*/
+
+  .container {
+  height: 700px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #301e0e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.containerR{
+  margin-top: 10px;
+  height: 700px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #301e0e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #db9c54;
+  border-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: monospace;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  background-color: #dfb58bb6;
+  transition: 0.4s;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+input:invalid {
+  border-color: rgb(226, 13, 13);
+}
+
+input:valid {
+  border-color: green;
+}
+
+
 /*Cards de categorias*/
 
 .tarjeta-container {
@@ -278,6 +368,7 @@ p{
   }
   
   .tarjeta h2 {
+    color: black;
     margin-top: 20px;
     font-size: 1.3em;
     font-weight: bold;
@@ -316,79 +407,85 @@ p{
  
 
 /*Footer*/
-  footer {
+footer {
     
-    background-color: #251403;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  footer h3 {
-    font-family: monospace;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  footer ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  footer ul li i {
-    margin-right: 10px;
-  }
-  
-  footer ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  footer ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-media {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .social-media li {
-    margin-right: 20px;
-  }
-  
-  .social-media li:last-child {
-    margin-right: 0;
-  }
-  
-  .social-media li a i {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  /* Facebook */
-  .fa{
-    font-weight: bold;
-    color: #3b5998;
-  }
-  
-  /* Instagram */
-  .in{
-    font-weight: bold;
-    color: #e4405f;
-  }
-  
-  /* Twitter */
-  .twi {
-    font-weight: bold;
-    color: #1da1f2;
-  }
-  
-footer li {
-    font-family: monospace;
+  background-color: #251403;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
 }
 
+footer h3 {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+footer ul li i {
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin-right: 20px;
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.social-media li a i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Facebook */
+.fa{
+  font-weight: bold;
+  color: #3b5998;
+}
+
+/* Instagram */
+.in{
+  font-weight: bold;
+  color: #e4405f;
+}
+
+/* Twitter */
+.twi {
+  font-weight: bold;
+  color: #1da1f2;
+}
+
+footer li {
+  font-family: monospace;
+}
+
+.containerF{
+  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .tarjeta img{
   transition: transform 0.2s ease-in-out;
   border-radius: 10px;
@@ -402,65 +499,3 @@ footer li {
 
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-  text-align: center;
-  font-size: 30px;
-  font-family: Arial, sans-serif;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-label {
-  display: block;
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-  border-radius: 5px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-}
-
-input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 20px;
-  font-family: Arial, sans-serif;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #555;
-}
-
-input:invalid {
-  border-color: rgb(245, 242, 242);
-}
-
-input:valid {
-  border-color: green;
-}
